@@ -1,11 +1,9 @@
-// Menu data structure
 var menuLinks = [
     { text: 'about', href: '/about' },
     { text: 'catalog', href: '/catalog' },
     { text: 'orders', href: '/orders' },
     { text: 'account', href: '/account' },
   ];
-
 
 const mainEL = document.querySelector('main');    
 mainEL.style.background = 'var(--main-bg)';
@@ -17,15 +15,16 @@ const topMenuEL= document.querySelector('#top-menu');
 topMenuEL.style.height = "100%"
 topMenuEL.style.background = 'var(--top-menu-bg)';
 topMenuEL.classList.add("flex-around");
+menuLinks.forEach = document.createElement ("a");
 
+//var menuLinks = [
+ //   { text: 'about', href: '/about' },
+   // { text: 'catalog', href: '/catalog' },
+    //{ text: 'orders', href: '/orders' },
+  //  { text: 'account', href: '/account' },
+ // ];
 
-
-
-var menuLinks = [
-  { text: 'about', href: '/about' },
-  { text: 'catalog', href: '/catalog' },
-  { text: 'orders', href: '/orders' },
-  { text: 'account', href: '/account' },
-];
-
-menuLinks.forEach = document.createElement ("a")
+  const subMenuEl = document.querySelector ('#sub-menu');
+  subMenuEl.style.height = "100%"
+  subMenuEl.style.background= 'var (--sub-menu-bg)';
+  subMenuEl.classList.add("flex-around")
